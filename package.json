@@ -1,0 +1,29 @@
+{
+  "name": "coerce-tabular",
+  "version": "1.0.0",
+  "description": "An object stream that coerces tabular data to numbers",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "dependencies": {
+    "through2": "~0.6.5"
+  },
+  "devDependencies": {
+    "list-stream": "~1.0.0",
+    "tape": "~4.0.0"
+  },
+  "keywords": [
+    "tabular",
+    "coerce",
+    "spreadsheets"
+  ],
+  "author": "Vincent Weevers (http://vincentweevers.nl)",
+  "license": "MIT",
+  "repository": "git://github.com/vweevers/coerce-tabular",
+  "bugs": "https://github.com/vweevers/coerce-tabular/issues",
+  "homepage": "https://github.com/vweevers/coerce-tabular",
+  "engines": {
+    "node": ">= 0.10.0"
+  }
+}
