@@ -10,6 +10,8 @@ module.exports = function() {
     for (var i = keys.length - 1; i >= 0; i--) {
       var k = keys[i]
 
+      if (obj[k] === "") continue;
+
       if (typeof obj[k] === 'string') {
         // Support european format
         var num = obj[k].replace(',', '.')

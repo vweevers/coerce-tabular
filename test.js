@@ -48,3 +48,25 @@ test('does not touch non-numbers', function(t){
 
   c.end({a: '3-2', b: 'a1', c: '2a'})
 })
+
+test('does not touch null', function(t){
+  var c = coerce()
+
+  c.pipe(list.obj(function(err, data){
+    t.deepEqual(data, [{a: null}])
+    t.end()
+  }))
+
+  c.end({a: null})
+})
+
+test('does not touch empty string', function(t){
+  var c = coerce()
+
+  c.pipe(list.obj(function(err, data){
+    t.deepEqual(data, [{a: ""}])
+    t.end()
+  }))
+
+  c.end({a: ""})
+})
